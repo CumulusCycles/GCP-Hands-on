@@ -4,7 +4,7 @@ apt update
 apt -y install apache2 
 apt -y install git
 git clone https://github.com/CumulusCycles/GCP-Hands-on.git
-cp GCP-Hands-on/1_Google_Compute_Engine/index.html /var/www/html/index.html 
+cp -r GCP-Hands-on/1_Google_Compute_Engine/src /var/www/html/
 
 # Get the webserver's hostname
 SERVER_NAME=$(hostname)
